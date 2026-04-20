@@ -1,0 +1,55 @@
+.header {
+  background: linear-gradient(to bottom, #70D18C 0%, #B8F1C8 50%, #F0FDF4 100%);
+  color: #1A7F3D;
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.header h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.themeButton {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #8cd29f;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.themeButton:hover {
+  background: rgba(15, 217, 200, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.themeButton:active {
+  transform: translateY(0);
+}
+
+/* 移动端微调 */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header p {
+    font-size: 1rem;
+  }
+}
